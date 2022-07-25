@@ -9,6 +9,12 @@ The dependencies required are all included in the `package.json` file. They will
 
 To start the project run `npm start`.
 
+## Check out the web app
+
+click the link below
+
+Open [ifeanyi-bank](https://ifeanyi-bank.netlify.app/) to view ti in the browser.
+
 ## What I learnt
 
 While creating this project, I learnt a lot of new things. Which I would like to share.
