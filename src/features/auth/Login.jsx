@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { useSelector } from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCredentials } from "../auth/authSlice";
@@ -13,7 +12,7 @@ const Login = () => {
     // dispatch action to store
     const dispatch = useDispatch();
     // get login function 
-    const [login] = useLoginMutation()
+    const [login] = useLoginMutation();
 
     // used to set focus when component mounts
     const userRef = useRef()
