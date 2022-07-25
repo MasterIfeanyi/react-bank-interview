@@ -1,8 +1,11 @@
 import {useState} from 'react'
 import {FaPlus} from "react-icons/fa"
 import { useDepositMutation } from './accountApiSlice'
-import {useNavigate, useParams} from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+toast.configure();
 
 const Deposit = () => {
 
@@ -22,6 +25,8 @@ const Deposit = () => {
         try {
             await deposit({ id, amount: text }).unwrap();
             navigate("/account");
+            // inbuilt-notification
+            toast.success('Deposited money');
         } catch (err) {
             if (!err?.originalStatus) {
                 setErrMsg('No Server Response'); // server is off

@@ -13,7 +13,7 @@ To start the project run `npm start`.
 
 While creating this project, I learnt a lot of new things. Which I would like to share.
 
-### Rtk query trasnformResponse
+### Rtk query transformResponse
 
 I learnt how to use transformResponse in Rtk query, which is used to access nested properties in an object.
 

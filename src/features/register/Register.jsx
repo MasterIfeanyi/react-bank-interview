@@ -17,7 +17,7 @@ const Register = () => {
     // dispatch action to store
     const dispatch = useDispatch();
     // get login function and isLoading 
-    const [register] = useRegisterMutation()
+    const [register] = useRegisterMutation();
 
     // username state
     const [user, setUser] = useState("");

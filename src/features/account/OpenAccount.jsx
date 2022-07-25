@@ -1,6 +1,9 @@
 import {useState, useRef, useEffect} from 'react'
 import { useCreateAccountMutation } from './accountApiSlice';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const OpenAccount = () => {
 
@@ -50,6 +53,8 @@ const OpenAccount = () => {
             // clear
             clear();
             navigate("/account");
+            // inbuilt-notification
+            toast.success('successful');
         } catch (e) {
             console.log(e.message)
         }
