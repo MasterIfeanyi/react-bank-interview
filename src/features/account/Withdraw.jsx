@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaPlus } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
 import { useWithdrawMutation } from './accountApiSlice';
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from 'react-toastify';
@@ -66,7 +66,7 @@ const Withdraw = () => {
                                     id="deposit"
                                     className="form-control me-2"
                                 />
-                                <button className="btn btn-primary"><FaPlus /></button>
+                                <button className="btn btn-primary"><FaMinus /></button>
                             </div>
                         </div>
                     </form>
