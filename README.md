@@ -13,7 +13,7 @@ To start the project run `npm start`.
 
 click the link below
 
-Open [ifeanyi-bank](https://ifeanyi-bank.netlify.app/) to view ti in the browser.
+Open [ifeanyi-bank](https://ifeanyi-bank.netlify.app/) to view it in the browser.
 
 ## What I learnt
 
