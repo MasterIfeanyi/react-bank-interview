@@ -3,7 +3,8 @@ import { setCredentials, logOut } from "../../features/auth/authSlice"
 
 // attach the accessToken to our request
 const baseQuery = fetchBaseQuery({
-    baseUrl: "https://ifeanyi-bank-backend.herokuapp.com", // back-end url
+    baseUrl: "https://ifeanyi-bank-backend.glitch.me/", // back-end url
+    // baseUrl: "https://ifeanyi-bank-backend.herokuapp.com", // back-end url
     credentials: "include", // send cookie with every request
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token // get accessToken from state
